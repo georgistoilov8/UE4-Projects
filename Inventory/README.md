@@ -30,6 +30,13 @@ Inventory_Widget се задава да е WidgetInventoryFromClass
 #include "../Inventory/InteractComponent.h"
 #include "Kismet/GameplayStatics.h"
 ...
+void ATopDownARPGPlayerController::SetupInputComponent()
+{
+	...
+	InputComponent->BindAction("PickUp", IE_Pressed, this, &ATopDownARPGPlayerController::PickUpItem);
+	InputComponent->BindAction("UseInventory", IE_Pressed, this, &ATopDownARPGPlayerController::UseInventory);
+}
+...
 void ATopDownARPGPlayerController::PickUpItem() {
 	UWorld* World = GetWorld();
 	if (!IsValid(World)) {
