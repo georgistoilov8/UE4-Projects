@@ -18,6 +18,13 @@ Link to zip of the project: https://drive.google.com/open?id=1ZoOSueqFr6buskekoS
 И ако случайно искаме да премахнем обект от инвентара просто кликваме върху него и излизат опции, които могат да се извършат с този обект.
 ![alt text](https://github.com/georgistoilov8/UE4-Projects/blob/master/Inventory/inventory_4.png "Inventory_4")
 
+Важно!  
+За да започне да се показва визуалната част от инвентара е необходимо да се направи следното:  
+Отваря се Blueprint-а на TopDownCharacter и се отива на Interaction Component. Там има поле Widgets.  
+Widget_Inventory се задава да е Widget_Inventory  
+Inventory_Widget се задава да е WidgetInventoryFromClass
+
+
 Това се добавя в YourPlayerController.cpp
 ```c++
 #include "../Inventory/InteractComponent.h"
