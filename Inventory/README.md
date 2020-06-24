@@ -4,6 +4,20 @@ Project for course Game Engine Architecture in Faculty of Mathematics and Inform
 
 Link to zip of the project: https://drive.google.com/open?id=1ZoOSueqFr6buskekoSXBSEkAWcWqMVrk
 
+За реализацията на този проект са създадени обкети, които могат да бъдат взимани от играча. Показани са как изглеждат  
+на долната фигура
+![alt text](https://github.com/georgistoilov8/UE4-Projects/blob/master/Inventory/inventory_1.png "Inventory_1")
+
+След стартиране на проекта при натискане на бутона "I" се показва инвентара.
+![alt text](https://github.com/georgistoilov8/UE4-Projects/blob/master/Inventory/inventory_2.png "Inventory_2")
+
+При преминаване покрай обектите за взимане над тях се показва иконка. Това показва, че този обект може да бъде взет.  
+При натискане на бутона "P" обектът се прибира в инвентара. Тогава при показване на инвентара вече имаме и обекти в него.
+![alt text](https://github.com/georgistoilov8/UE4-Projects/blob/master/Inventory/inventory_3.png "Inventory_3")
+
+И ако случайно искаме да премахнем обект от инвентара просто кликваме върху него и излизат опции, които могат да се извършат с този обект.
+![alt text](https://github.com/georgistoilov8/UE4-Projects/blob/master/Inventory/inventory_4.png "Inventory_4")
+
 Това се добавя в YourPlayerController.cpp
 ```c++
 #include "../Inventory/InteractComponent.h"
